@@ -74,8 +74,8 @@ unsigned long fun1(int key) {
 }
 
 int main(void) {
-    auto fun = [](const int& key) -> unsigned long { return key % 10; };
-    HashMap<int, std::string> hmap(fun);
+    auto hashFun = [](const int& key) -> unsigned long { return key % 10; };
+    HashMap<int, std::string> hmap(hashFun);
     hmap.put(1, "val1");
     cout << hmap.get(1) << "\n";
     hmap.put(2, "val2");
