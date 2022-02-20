@@ -5,6 +5,9 @@ using namespace std;
  * time taken 54mins
  * 重點：lambda使用共用ｓｔａｒｔ變數來當作start position、process string from head to end
  * time complexityO(n)
+ * string.find, string::npos
+ * substr
+ * stoi, to_string
  */
 struct TreeNode {
     int val;
