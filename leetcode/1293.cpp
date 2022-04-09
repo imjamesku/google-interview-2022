@@ -11,7 +11,7 @@ template <typename TT>
 class Solution {
    public:
     int shortestPath(vector<vector<int>>& grid, int k) {
-        // state i, j, remaining k
+        // state i, j, remaining k, steps
         // visited i, j, k
         // bfs
         deque<tuple<int, int, int, int>> q{{0, 0, k, 0}};

@@ -3,6 +3,7 @@
 using namespace std;
 int main(void) {
     string s = "abc123";
+    cout << "sub: " << s.substr(0, -2) << "\n";
     char const* p = s.c_str();
     for (size_t i = 0; i <= s.size(); i++) {
         char c = *(p + i);
